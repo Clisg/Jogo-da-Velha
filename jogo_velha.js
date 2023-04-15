@@ -6,6 +6,7 @@ var gameover = false;
 atualizaJogadorDaVez();
 iniciaEspacos();
 
+
 function atualizaJogadorDaVez(){
     var player = document.querySelector("#jogadordavez img");
     player.src= jogando+".png";
