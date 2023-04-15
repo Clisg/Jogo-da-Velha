@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    
+    <style type="text/css">
+        body {
+            --tamanho_espaco: 80px;
+            --qnt_linhas: 3;
+            --margen_espaco: 4px;
+            --tamanho_quadrado: calc((var(--tamanho_espaco) + var(--margen_espaco) * 2) * var(--qnt_linhas));
+        }
+        #jogadordavez{
+            
+            margin: auto;    
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: var(--tamanho_quadrado);
+            height: var(--tamanho_espaco);
+        }
+        .espaco{
+            width: var(--tamanho_espaco);
+            height: var(--tamanho_espaco);
+           
+            margin: var(--margen_espaco);
+            background-color: white;
+            float: left;
+            
+        }
+        .espaco img {
+            width: var(--tamanho_espaco);
+            height: var(--tamanho_espaco);
+        }
+        .tabuleiro{
+            
+            width: var(--tamanho_quadrado);
+            height: var(--tamanho_quadrado);
+            background: linear-gradient(rgb(184, 13, 184),orange,rgb(221, 90, 162),rgb(113, 214, 18));
+            margin: auto;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="jogadordavez">  
+        <h3 style="float:left; margin-right: 10px">Vez do Jogador :</h3>
+        <img src="" height="80" alt="Imagem mostrando qual é o jogador da vez">
+    </div>
+
+    <div class="tabuleiro">
+        <div id="a1" class="espaco" jogada=""></div>
+        <div id="a2" class="espaco" jogada=""></div>
+        <div id="a3" class="espaco" jogada=""></div>
+
+        <div id="b1" class="espaco" jogada=""></div>
+        <div id="b2" class="espaco" jogada=""></div>
+        <div id="b3" class="espaco" jogada=""></div>
+
+        <div id="c1" class="espaco" jogada=""></div>
+        <div id="c2" class="espaco" jogada=""></div>
+        <div id="c3" class="espaco" jogada=""></div>
+
+    </div>
+    <script src="jogo_velha.js"></script>
+</body>
+</html>
